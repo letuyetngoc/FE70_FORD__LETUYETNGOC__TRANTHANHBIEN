@@ -1,0 +1,13 @@
+@font-face {
+  font-family: font_strong;
+  src: url(../../font/antenna-cond-regular.ttf) format("truetype");
+  // url(../../font/antenna-cond-medium.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: font_strong !important;
+}
+html {
+  font-size: 10px;
+}
