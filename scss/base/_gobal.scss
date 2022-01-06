@@ -1,0 +1,40 @@
+@font-face {
+  font-family: font_light;
+  src: url(../lib/font/light.woff) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: font_regular;
+  src: url(../lib/font/regular.woff);
+}
+@font-face {
+  font-family: font_medium;
+  src: url(../lib/font/antenna-medium.ttf);
+}
+
+html,
+body {
+  font-size: 10px;
+  font-family: font_light !important;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container_responsive {
+  padding-left: 45px;
+  padding-right: 45px;
+  @include Responesive(LG) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include Responesive(MD) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @include Responesive(XS) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
